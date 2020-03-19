@@ -21,7 +21,7 @@ module firewall {
 |----|-----------|:----:|:-------:|:--------:|
 |name|Name of the Firewall rule|String| - |Yes|
 |network|Name of the existing network. If leave empty, will be defined the default network. |String| "default" |Yes|
-|protocol|Name of the protocol to allow. This value can either be one of the following protocols (tcp, udp, icmp, esp, ah, sctp). If leave empty, will be defined "tcp.|String| "tcp" |Yes|
+|protocol|Name of the protocol to allow. This value can either be one of the following protocols (tcp, udp, icmp, esp, ah, sctp). If leave empty, will be defined "tcp".|String| "tcp" |Yes|
 |ports|List of ports and/or port ranges to allow. It will only be used if the protocol is TCP or UDP|List| - |Yes|
 |source_ranges|A list of source IP address ranges (CIDR) that this rule applies to. If leave empty, will be defined from anywhere.|List| "0.0.0.0/0" |Yes|
 |target_tags|A list of tags indicating instances located in the network to be applied for this firewall rule. If no targetTags are specified, the firewall rule applies to all instances on the specified network.|List| - |No|
