@@ -27,9 +27,8 @@ module firewall {
 |tags|A list of tags indicating instances located in the network to be applied for this firewall rule. If no targetTags are specified, the firewall rule applies to all instances on the specified network.|List| - |No|
 
 
-### Docs
+### Reference
 
-module reference docs: 
 - terraform.io (v0.12)
 - [Terraform GCP Firewall](https://www.terraform.io/docs/providers/google/r/compute_firewall.html)
 - [GMafra](https://github.com/GMafra/terraform-gcp-firewall-rules)
