@@ -18,7 +18,7 @@ module firewall {
 
 ### Inputs
 | Name | Description | Type | Default | Required |
-|------|-------------|:----:|:-----:|:-----:|
+|--------|---------------|:------:|:-------:|:-------:|
 |name|Name of the Firewall rule|String| - |Yes|
 |network|Name of the existing network. If leave empty, will be defined the default network. |String| "default" |Yes|
 |protocol|Name of the protocol to allow. This value can either be one of the following protocols (tcp, udp, icmp, esp, ah, sctp). If leave empty, will be defined "tcp".|String| "tcp" |Yes|
