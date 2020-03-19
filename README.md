@@ -31,6 +31,5 @@ module firewall {
 
 - terraform.io (v0.12)
 - [Terraform GCP Firewall](https://www.terraform.io/docs/providers/google/r/compute_firewall.html)
-- [GMafra](https://github.com/GMafra/terraform-gcp-firewall-rules)
 
 
