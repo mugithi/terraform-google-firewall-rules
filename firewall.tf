@@ -1,5 +1,5 @@
 resource "google_compute_firewall" "allow_fw" {
-  name          = "vpc-${var.network}-firewall-${var.tags}"
+  name          = "vpc-${var.network}-firewall
   description   = "Creates firewall rule for target instances"
   network       = var.network
 
