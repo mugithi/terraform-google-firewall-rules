@@ -1,7 +1,3 @@
-variable "rule-name" {
-  type          = string
-  description   = "Name of the Firewall rule"
-}
 variable "network" {
   type          = string
   default       = "default"
