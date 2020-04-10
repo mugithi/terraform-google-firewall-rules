@@ -5,7 +5,7 @@ resource "random_string" "random" {
 }
 
 resource "google_compute_firewall" "allow_fw" {
-  name          = "vpc-${var.network}-firewall-${random_string.random}"
+  name          = "vpc-${var.network}-firewall-${random_string.random.result}"
   description   = "Creates firewall rule for target instances"
   network       = var.network
 
