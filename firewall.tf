@@ -1,5 +1,11 @@
+resource "random_string" "random" {
+  length = 5
+  special = false
+  override_special = "/@£$"
+}
+
 resource "google_compute_firewall" "allow_fw" {
-  name          = "vpc-${var.network}-firewall"
+  name          = "vpc-${var.network}-firewall-${random_string.random}"
   description   = "Creates firewall rule for target instances"
   network       = var.network
 
