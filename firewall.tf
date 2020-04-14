@@ -1,7 +1,6 @@
 resource "random_string" "random" {
-  length = 5
+  length = 4
   special = false
-  override_special = "/@£$"
 }
 
 resource "google_compute_firewall" "allow_fw" {
