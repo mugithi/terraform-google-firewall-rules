@@ -1,7 +1,6 @@
 resource "random_string" "random" {
   length = 4
   special = false
-  lower = true
 }
 
 resource "google_compute_firewall" "allow_fw" {
